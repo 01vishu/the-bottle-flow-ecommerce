@@ -1,0 +1,52 @@
+@import "./variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $swatch_1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+main {
+  padding: 10px;
+}
+.title_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h3_title {
+  color: $swatch_9;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: $fs_1;
+  span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $swatch_9;
+  }
+}
+.Button_1 {
+  border: 1px solid $swatch_9;
+  padding: 4px 8px;
+  width: fit-content;
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: $white;
+  color: $swatch_9;
+  cursor: pointer;
+  font-size: $fs_4;
+}

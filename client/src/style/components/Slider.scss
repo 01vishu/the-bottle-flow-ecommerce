@@ -1,0 +1,34 @@
+@import "../variable.scss";
+.slider {
+  position: relative;
+
+  .card {
+    display: flex;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    border-radius: 16px;
+    transition: all 0.75s ease;
+    animation: fadeIn 1s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .slider_button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: $fs_1;
+    color: $white;
+    cursor: pointer;
+  }
+}
